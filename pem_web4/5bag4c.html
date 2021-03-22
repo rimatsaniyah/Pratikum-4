@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.min.js">
+        // menghubungkan dengan jquery</script>
+        <script type="text/javascript">
+            
+            // untuk memanggil document jquery yang ready
+            $(document).ready(function(){
+
+                // id daftar: font merah background kuning
+                $("#daftar").addClass("merahkuning");
+
+                // class subdaftar: font biru background hijau
+                $(".subdaftar").addClass("kuninghitam");
+                
+            });
+        </script>
+        
+        <!-- memberi warna pada tampilan -->
+        <style type="text/css">
+            .merahkuning{
+                color: red;
+                font-weight: bold;
+                background-color: yellow;
+                padding: 3px;
+            }
+            .kuninghitam{
+                color: blue;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Paragraf pertama</p>
+        </div>
+        <div>
+            <ul id="daftar">
+                <li>Item 1</li>
+                <li class="subdaftar">Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+    </body>
+</html>

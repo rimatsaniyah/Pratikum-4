@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script src="jquery-3.6.0.min.js">
+        // menghubungkan dengan jquery</script>
+        <script type="text/javascript">
+            
+            // untuk memanggil document jquery yang ready
+            $(document).ready(function() {
+                
+                // untuk memberi efek fade in
+                $("#fadein").click(function(){$(".kotak").fadeIn("slow")}); 
+                
+                // untuk memberi efek fade out
+                $("#fadeout").click(function(){$(".kotak").fadeOut("slow")}); 
+                
+                // untuk memberi efek fade to
+                $("#fadeto").click(function(){$(".kotak").fadeTo("slow", 0.3)}); 
+            });
+        </script>
+
+        <!-- mengatur ukuran dan warna awal kotak -->
+        <style type="text/css">
+            .kotak { 
+                width: 200px;
+                height: 200px;
+                border-style: black;
+                border-width: 2px;
+                border-color: black;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- menampilkan dan mengatur kotak -->
+        <div class="kotak"></div> 
+        <br>
+        <br>
+        <button id="fadein"> Fade In </button> 
+        <button id="fadeout"> Fade Out </button> 
+        <button id="fadeto"> Fade To </button> 
+    </body>
+</html>
